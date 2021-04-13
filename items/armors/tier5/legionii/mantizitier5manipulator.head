@@ -11,12 +11,12 @@
   "shortdescription" : "Legionii Helm",
   "category" : "headarmour",
   "tooltipKind" : "armornew2",
-  "itemTags" : [ "upgradeableWeapon" ],
+  "itemTags" : [ "upgradeableWeapon", "defensive", "melee" ],
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
 
-  "level" : 4,
+  "level" : 5,
   //"collectablesOnPickup" : { "fu_armormelee" : "fumantizitier5mhead" },
   "leveledStatusEffects" : [
     {

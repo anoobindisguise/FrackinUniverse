@@ -31,11 +31,14 @@ function init(...)
 		return false
 	end)
 	if not status.statusProperty("fu_creationDate") then status.setStatusProperty("fu_creationDate",os.time()) end
+	status.setStatusProperty("fuFoodTrackerHandler",0)
+	self.foodTracker=((status.isResource("food") and status.resource("food")) or 0)
 
 	message.setHandler("player.isAdmin",player.isAdmin)
 	message.setHandler("player.uniqueId",player.uniqueId)
 	message.setHandler("player.worldId",player.worldId)
 	status.setStatusProperty("player.worldId",player.worldId())
+	status.setStatusProperty("player.ownShipWorldId",player.ownShipWorldId())
 	message.setHandler("player.availableTechs", player.availableTechs)
 	message.setHandler("player.enabledTechs", player.enabledTechs)
 	message.setHandler("player.shipUpgrades", player.shipUpgrades)
@@ -84,7 +87,20 @@ function update(dt)
 		if not pass then sb.logError("%s",result) end
 		pass,result=pcall(handleStatusProperties,dt)
 		if not pass then sb.logError("%s",result) end
+		pass,result=pcall(handleFoodTracking,dt)
+		if not pass then sb.logError("%s",result) end
 	end
+end
+
+function handleFoodTracking(dt)
+	local foodCheck=((status.isResource("food") and status.resource("food")) or 0)
+	local foodDelta=status.stat("foodDelta")
+	if (foodDelta>=0) or (foodCheck ~= self.foodTracker) then
+		status.setStatusProperty("fuFoodTrackerHandler",1)
+	else
+		status.setStatusProperty("fuFoodTrackerHandler",-1)
+	end
+	self.foodTracker=foodCheck
 end
 
 function handleStatusProperties(dt)
@@ -227,6 +243,10 @@ function uninit(...)
 	end
 	if origUninit then
 		origUninit(...)
+	end
+	
+	if fuFoodTrackerHandler then
+		status.setStatusProperty("fuFoodTrackerHandler",0)
 	end
 	status.setPersistentEffects("ffunknownEffects",{})
 end

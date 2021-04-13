@@ -26,7 +26,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztz7sNgDAMRVFKKqZiB1ZiXxaAIpYiRAHI8ie+R3pSuvhOEwAAAAAAAAAAAAC8MystOq3ODN1y29am+Y7WLDet1\/Y2zXekZum0WJRmq94oLG6h1w+9Of8AgNEsRvN0BJgV707LZu++yr1WvDstW+8qtYpKrb1KraJSq\/jbkrH1ydeOrJ29ERqQ0wmpMEAo",
+         "data":"eJztz8sJgDAQRdEsXdmErdiDndqYDSjoQBAXKmE+mXvgQXaZWwoAAAAAAAAAAAAAvDM0mnetOiN0y23LtZZvb81y03xsnc61fHtqlk6NeWnW6vVC4xZ67dAb8w8A6M2oNEubg2mx7tRstu7L3KvFulOz9S5Tq8jUWsvUKjK1ir8tEVuffO2I2lnroQEx7RwLRJY=",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -684,7 +684,11 @@
         }, 
         {
          "firstgid":8685,
-         "source":"..\/..\/..\/..\/..\/frackin\/tilesets\/extradungeons-custom\/modstuff.json"
+         "source":"..\/..\/..\/..\/tilesets\/extradungeons-custom\/modstuff.json"
+        }, 
+        {
+         "firstgid":8746,
+         "source":"..\/..\/..\/..\/tilesets\/fu_mastermaterials.json"
         }],
  "tilewidth":8,
  "type":"map",

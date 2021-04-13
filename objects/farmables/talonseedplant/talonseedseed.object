@@ -1,7 +1,7 @@
 {
   "objectName" : "talonseedseed",
     "colonyTags" : [ "nature" ],
-  "rarity" : "Uncommon",
+  "rarity" : "Common",
   "category" : "seed",
   "description" : "Genetically improved! Resistant to cold.",
   "shortdescription" : "Talon Seed",
@@ -19,7 +19,7 @@
       "frames" : 1,
       "animationCycle" : 0.5,
 
-      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1] ],
+      "spaces" : [ [0, 0], [0, 1] ],
       "requireTilledAnchors" : true,
       "anchors" : [ "bottom" ]
     }

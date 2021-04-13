@@ -1,4 +1,20 @@
 {
+  "researchBonus1" : {
+    "unique" : false,
+    "text" : "You've gained a +^green;1^reset; ^orange;Research^reset; bonus based on your session playtime. ^red;This bonus will disable if you are AFK^reset;."
+  },    
+  "researchBonus2" : {
+    "unique" : false,
+    "text" : "You've gained a +^green;2^reset; ^orange;Research^reset; bonus based on your session playtime. ^red;This bonus will disable if you are AFK^reset;."
+  },
+  "researchBonus3" : {
+    "unique" : false,
+    "text" : "You've gained a +^green;3^reset; ^orange;Research^reset; bonus based on your session playtime. ^red;This bonus will disable if you are AFK^reset;."
+  }, 
+  "researchBonus4" : {
+    "unique" : false,
+    "text" : "You've gained a +^green;4^reset; ^orange;Research^reset; bonus based on your session playtime. ^red;This bonus will disable if you are AFK^reset;."
+  },     
   "upgrade_station" : {
     "type" : "quest",
     "senderName" : "Vinalisj",
@@ -437,7 +453,7 @@
     "text" : "Moving fast is amazing! ^orange;Especially downwards at the ground^reset; where the magical sparkles await! You should go ^red;really fast^reset; and ram into the ground to collect ^orange;extra^reset; sparkles!",
     "textSpeed" : 70
   },
-  "insanityEffectgrav" : {
+  "insanityeffectgrav" : {
     "unique" : false,
 	  "senderName" : "You",
 	  "portraitImage" : "/interface/chatbubbles/evileyetalk.png:<frame>",     
